@@ -158,17 +158,7 @@ class SudokuState:
 
 
 # -----------------------------------------------------------------------
-# Make all of your changes to the SudokuState class above.
-# only when you're running the last experiments will
-# you need to change anything below here and then only
-# the different problem inputs
 
-# -----------------------------------
-# Even though this is the same DFS code
-# that we used last time, our next_states
-# function is makeing an "informed" decision
-# so this algorithm performs similarly to
-# best first search.
 def dfs(state):
     """
     Recursive depth first search implementation
@@ -200,7 +190,7 @@ def dfs(state):
 # three different board configurations:
 # - problem1
 # - problem2
-# - heart (example from class notes)
+# - heart 
 def problem1():
     b = SudokuState()
     b = b.add_number(0, 1, 7)
@@ -288,17 +278,7 @@ def heart():
     b = b.add_number(8, 4, 8)
     return b
 
-
-# --------------------------------
-# Code that actual runs a sudoku problem, times it
-# and prints out the solution.
-# You can vary which problem your running on between 
-# problem1(), problem2() and heart() by changing the line
-# below
-#
-# Uncomment this code when you have everything implemented and you
-# want to solve some of the sample problems!
-
+#Sample problems solved
 problem = problem1()
 print("Starting board:")
 print(problem)
